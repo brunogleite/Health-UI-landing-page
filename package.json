@@ -1,0 +1,24 @@
+{
+  "name": "Health-UI-landing-page",
+  "version": "1.0.0",
+  "description": "Project made with HTML and SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunogleite/Health-UI-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunogleite/Health-UI-landing-page/issues"
+  },
+  "homepage": "https://github.com/brunogleite/Health-UI-landing-page#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "sass": "^1.42.1"
+  }
+}

@@ -1,0 +1,51 @@
+@use '../abstracts/colors';
+
+
+    header{
+        background-color: var(--darkColor);
+        color: var(--whiteColor);
+        font-weight: 700;
+
+        nav{
+            //border: 1px solid red;
+            display: flex;
+            margin: 0 auto;
+            padding-top: 1.3125em;
+            padding-bottom: 1em;
+            
+            .logo{
+                //border: 1px solid blue;
+                display: flex;
+                align-items: center;
+
+
+                span{
+                    font-size: 16px;
+                   
+                }
+            }
+
+            .list-items{
+                //border: 1px solid pink;
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                
+                ul{
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li{
+                        margin-left: 1.875em;
+                    }
+                }
+
+                a{
+                    margin-left: 3.3125em;
+                }
+            }
+        }
+    }
