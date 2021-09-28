@@ -30,7 +30,7 @@ header nav .logo {
   align-items: center;
 }
 header nav .logo span {
-  font-size: 16px;
+  font-size: 1rem;
 }
 header nav .list-items {
   display: flex;
@@ -144,14 +144,14 @@ header nav .list-items a {
 }
 .onboard {
   min-height: 100vh;
-  background-color: var(--primaryColor);
   position: relative;
 }
 .onboard__center {
+  background-color: var(--primaryColor);
+  min-height: 100vh;
   display: grid;
   place-content: center;
   align-items: center;
-  border: 1px solid yellow;
   display: flex;
 }
 .onboard__center-center {
@@ -168,23 +168,20 @@ header nav .list-items a {
   margin-bottom: 3.6em;
 }
 .onboard__bottom {
-  border: 1px solid green;
-  width: 50%;
-  margin: 0 auto;
   text-align: center;
   position: relative;
 }
-.onboard__bottom .mockup-bottom-left {
+.onboard__bottom-mockup {
+  display: flex;
+  width: 40%;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
+  top: -170px;
+  left: 30%;
 }
-.onboard__bottom .mockup-bottom-right {
+.onboard__bottom-mockup .mockup-bottom-right {
   position: absolute;
-  bottom: -670px;
+  top: 60px;
   right: 0;
-  z-index: 100;
 }
 
 html {
