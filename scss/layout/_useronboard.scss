@@ -1,0 +1,60 @@
+@use '../abstracts/colors' as *;
+
+
+
+.onboard{
+    min-height: 100vh;
+    background-color: var(--primaryColor);
+    position: relative;
+  
+
+    &__center{
+        display: grid;
+        place-content: center;
+        align-items: center;
+        border: 1px solid yellow;
+        display: flex;
+
+        &-center{
+            text-align: center;
+            color: var(--whiteColor);
+            margin: 0 6.8em;
+
+            h1{
+                font-size: 2.5rem;
+                margin-bottom: 0.8em;
+            }
+
+            p{
+                line-height: 28px;
+                margin-bottom: 3.6em;
+            }
+
+        }
+
+        
+    }
+
+    &__bottom{
+        border: 1px solid green;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+
+        .mockup-bottom-left{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .mockup-bottom-right{
+            position: absolute;
+            bottom: -670px;
+            right: 0;
+            z-index: 100;
+        }
+    }
+    
+}
