@@ -1,3 +1,58 @@
 .product__buy{
-    
+    display: grid;
+    place-content: center;
+  
+    min-height: 100vh;
+
+    &-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid red;
+        margin-top: 5.4em;
+
+        h1{
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-top: -0.74em;
+        }
+        
+    }
+}
+
+.product{
+    min-height: 100vh;
+    background-color: #F7FAFE;
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+    &__buy-mockup{
+        
+    }
+
+    &-content{
+       
+
+        a{
+            color: #8883F0;
+            font-size: 4.5rem;
+            margin-bottom: 0.6em;
+            font-weight: 700;
+        }
+
+        p{
+            color: #8883F0;
+            font-size: 1.4rem; 
+        }
+    }
+
+    .message-footer{
+        color: #95989D;
+        font-size: 1.25rem;
+
+        a{
+            color: #95989D;
+        }
+    }
 }
