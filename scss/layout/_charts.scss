@@ -1,0 +1,24 @@
+.charts{
+    min-height: 100vh;
+    background-color: #262B37;
+    display: grid;
+    place-content: center;
+
+    &__container{
+        text-align: center;
+        color: #fff;
+
+        &-content{
+            margin-bottom: 7em;
+            h1{
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+            p{
+                line-height: 28px;
+                
+            }
+        }
+    }
+}

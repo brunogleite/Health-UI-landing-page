@@ -1,0 +1,47 @@
+.features{
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border: 1px solid red;
+
+    &__sleep{
+        width: 480px;
+        height: 650px;
+        background: url(/images/Features-sleep-track.png);
+        
+        h1{
+            font-size: 2.5rem;
+            color: #fff;
+            padding-top: 1.6em;
+            padding-left: 1.1em;
+        }
+    }
+
+    &__workout{
+        width: 480px;
+        height: 650px;
+        background: url(/images/Features-workout-summary.png);
+        margin-left: 3.75em;
+
+        h1{
+            font-size: 2.5rem;
+            color: #fff;
+            padding-top: 1.6em;
+            padding-left: 1.1em;
+        }
+    }
+
+    &__wave-container{
+        border: 1px solid blue;
+        position: relative;
+        
+        img + img{
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            border: 1px solid red;
+        }
+    }
+}

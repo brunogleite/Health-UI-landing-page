@@ -142,6 +142,7 @@ header nav .list-items a {
 .highlights__container-content-details-col1 .li p, .highlights__container-content-details-col2 .li p {
   margin-left: 0.75em;
 }
+
 .onboard {
   min-height: 100vh;
   position: relative;
@@ -307,6 +308,69 @@ header nav .list-items a {
   background-color: #111;
   display: grid;
   place-content: center;
+}
+
+.charts {
+  min-height: 100vh;
+  background-color: #262B37;
+  display: grid;
+  place-content: center;
+}
+.charts__container {
+  text-align: center;
+  color: #fff;
+}
+.charts__container-content {
+  margin-bottom: 7em;
+}
+.charts__container-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.charts__container-content p {
+  line-height: 28px;
+}
+
+.features {
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  border: 1px solid red;
+}
+.features__sleep {
+  width: 480px;
+  height: 650px;
+  background: url(/images/Features-sleep-track.png);
+}
+.features__sleep h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  padding-top: 1.6em;
+  padding-left: 1.1em;
+}
+.features__workout {
+  width: 480px;
+  height: 650px;
+  background: url(/images/Features-workout-summary.png);
+  margin-left: 3.75em;
+}
+.features__workout h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  padding-top: 1.6em;
+  padding-left: 1.1em;
+}
+.features__wave-container {
+  border: 1px solid blue;
+  position: relative;
+}
+.features__wave-container img + img {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  border: 1px solid red;
 }
 
 html {
