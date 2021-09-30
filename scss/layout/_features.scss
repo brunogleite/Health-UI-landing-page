@@ -1,10 +1,10 @@
 .features{
     background-color: #111111;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     min-height: 100vh;
-    border: 1px solid red;
+    //border: 1px solid red;
 
     &__sleep{
         width: 480px;
@@ -12,6 +12,7 @@
         max-width: 100%;
         max-height: 100%;
         background: url(/images/Features-sleep-track.png);
+        margin-bottom: 70px;
         
         h1{
             font-size: 2.5rem;
@@ -26,6 +27,7 @@
         height: 650px;
         background: url(/images/Features-workout-summary.png);
         margin-left: 3.75em;
+        margin-bottom: 70px;
 
         h1{
             font-size: 2.5rem;
@@ -43,7 +45,7 @@
             position: absolute;
             top: 15px;
             left: 50%;
-            border: 1px solid red;
+            //border: 1px solid red;
         }
     }
 }

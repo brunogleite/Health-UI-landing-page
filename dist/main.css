@@ -10,7 +10,7 @@
 }
 
 .container-l {
-  max-width: 1765px;
+  max-width: 1620px;
   margin: 0 auto;
 }
 
@@ -20,14 +20,12 @@ header {
   font-weight: 700;
 }
 header nav {
-  border: 1px solid red;
   display: flex;
   margin: 0 auto;
   padding-top: 1.3125em;
   padding-bottom: 1em;
 }
 header nav .logo {
-  border: 1px solid blue;
   display: flex;
   align-items: center;
 }
@@ -35,7 +33,6 @@ header nav .logo span {
   font-size: 1rem;
 }
 header nav .list-items {
-  border: 1px solid pink;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -54,58 +51,69 @@ header nav .list-items a {
   margin-left: 3.3125em;
 }
 
+.faixa {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+
 .homepage {
   background-color: var(--primaryColor);
   height: 100vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: -1;
-  color: var(--whiteColor);
-}
-.homepage__col {
-  max-width: 50%;
-}
-.homepage__col-intro h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-.homepage__col-intro p {
-  font-weight: 500;
-  line-height: 28px;
-}
-.homepage__col-cta .cta-secondary {
-  margin-left: 1.5em;
-}
-.homepage__col-info {
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-}
-.homepage__col-info-screen h2 {
-  font-size: 2.5rem;
-}
-.homepage__col-info-screen span {
-  font-size: 1.5rem;
-}
-.homepage__col-info-components {
-  margin-left: 2.625em;
-}
-.homepage__col-info-components h2 {
-  font-size: 2.5rem;
-}
-.homepage__col-info-components span {
-  font-size: 1.5rem;
-}
-.homepage__col-figma p {
-  margin-bottom: 1em;
-}
-.homepage__col-figma img {
-  margin: -8px 0 0 -17px;
-}
-.homepage__col img {
   position: relative;
   z-index: -10;
+  color: var(--whiteColor);
+}
+.homepage__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+.homepage__row .homepage__col {
+  max-width: 50%;
+}
+.homepage__row .homepage__col-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.homepage__row .homepage__col-intro p {
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 3.5em;
+  margin-top: 2.2em;
+}
+.homepage__row .homepage__col-cta .cta-secondary {
+  margin-left: 1.5em;
+}
+.homepage__row .homepage__col-info {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+.homepage__row .homepage__col-info-screen h2 {
+  font-size: 2.5rem;
+}
+.homepage__row .homepage__col-info-screen span {
+  font-size: 1.5rem;
+}
+.homepage__row .homepage__col-info-components {
+  margin-left: 2.625em;
+}
+.homepage__row .homepage__col-info-components h2 {
+  font-size: 2.5rem;
+}
+.homepage__row .homepage__col-info-components span {
+  font-size: 1.5rem;
+}
+.homepage__row .homepage__col-figma p {
+  margin-bottom: 1em;
+}
+.homepage__row .homepage__col-figma img {
+  margin: -8px 0 0 -17px;
+}
+.homepage__row .homepage__col .health-components {
+  overflow: hidden;
 }
 
 [class^=homepage__col-] {
@@ -116,9 +124,6 @@ header nav .list-items a {
   min-height: 100vh;
   display: grid;
   place-content: center;
-}
-.highlights__container-content {
-  border: 1px solid blue;
 }
 .highlights__container-content-center {
   text-align: center;
@@ -137,6 +142,7 @@ header nav .list-items a {
   font-size: 1.5rem;
   font-weight: 700;
   justify-content: space-between;
+  margin-bottom: 5.63em;
 }
 .highlights__container-content-details-col1 .li, .highlights__container-content-details-col2 .li {
   display: flex;
@@ -192,9 +198,6 @@ header nav .list-items a {
   position: absolute;
   top: 60px;
   right: 0;
-}
-.onboard .wave-container {
-  border: 1px solid red;
 }
 
 .health {
@@ -262,7 +265,6 @@ header nav .list-items a {
   margin-bottom: 3.6em;
 }
 .workouts__bottom {
-  border: 4px solid green;
   text-align: center;
   position: relative;
 }
@@ -277,6 +279,8 @@ header nav .list-items a {
 }
 .workouts__bottom-mockup .dark {
   margin-top: 7.4em;
+  position: relative;
+  top: 150px;
 }
 .workouts__bottom-mockup .dark h1 {
   font-size: 3.5rem;
@@ -292,7 +296,6 @@ header nav .list-items a {
 
 .dark__mode {
   position: relative;
-  border: 3px solid red;
 }
 .dark__mode-wave-container-top {
   transform: rotate(180deg);
@@ -343,9 +346,9 @@ header nav .list-items a {
 .tickets {
   min-height: 100vh;
   background-color: #111;
-  border: 1px solid yellowgreen;
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
 @media only screen and (max-width: 1416px) {
   .tickets {
@@ -354,15 +357,23 @@ header nav .list-items a {
   }
 }
 
+.tickets__wave-container {
+  position: absolute;
+}
+
 .charts {
   min-height: 100vh;
   background-color: #262B37;
   display: grid;
   place-content: center;
 }
+.charts__wave-container-top {
+  transform: rotate(180deg);
+}
 .charts__container {
   text-align: center;
   color: #fff;
+  margin: 15em 0;
 }
 .charts__container-content {
   margin-bottom: 7em;
@@ -384,10 +395,9 @@ header nav .list-items a {
 .features {
   background-color: #111111;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
-  border: 1px solid red;
 }
 .features__sleep {
   width: 480px;
@@ -395,6 +405,7 @@ header nav .list-items a {
   max-width: 100%;
   max-height: 100%;
   background: url(/images/Features-sleep-track.png);
+  margin-bottom: 70px;
 }
 .features__sleep h1 {
   font-size: 2.5rem;
@@ -407,6 +418,7 @@ header nav .list-items a {
   height: 650px;
   background: url(/images/Features-workout-summary.png);
   margin-left: 3.75em;
+  margin-bottom: 70px;
 }
 .features__workout h1 {
   font-size: 2.5rem;
@@ -421,20 +433,17 @@ header nav .list-items a {
   position: absolute;
   top: 15px;
   left: 50%;
-  border: 1px solid red;
 }
 
 .product__buy {
   display: grid;
   place-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .product__buy-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
-  margin-top: 5.4em;
 }
 .product__buy-logo h1 {
   font-size: 4.5rem;
@@ -443,11 +452,20 @@ header nav .list-items a {
 }
 
 .product {
-  min-height: 100vh;
+  min-height: 20vh;
   background-color: #F7FAFE;
   display: grid;
   place-content: center;
   text-align: center;
+}
+.product__buy-mockup {
+  position: relative;
+  margin-top: -450px;
+}
+@media only screen and (max-width: 1400px) {
+  .product__buy-mockup {
+    margin-top: -350px;
+  }
 }
 .product-content a {
   color: #8883F0;

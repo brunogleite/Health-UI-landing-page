@@ -4,10 +4,14 @@
     display: grid;
     place-content: center;
 
+    &__wave-container-top{
+        transform: rotate(180deg);
+    }
+
     &__container{
         text-align: center;
         color: #fff;
-
+        margin: 15em 0;
         &-content{
             margin-bottom: 7em;
             h1{
