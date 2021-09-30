@@ -1,8 +1,13 @@
 .tickets{
     min-height: 100vh;
     background-color: #111;
-    display: grid;
-    place-content: center;
+    border: 1px solid yellowgreen;
+    display: flex;
+    align-items: flex-end;
 
+    @media only screen and(max-width: 1416px){
+        display: grid;
+        place-content: center;
+    }
     
 }

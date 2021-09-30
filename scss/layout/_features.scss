@@ -9,6 +9,8 @@
     &__sleep{
         width: 480px;
         height: 650px;
+        max-width: 100%;
+        max-height: 100%;
         background: url(/images/Features-sleep-track.png);
         
         h1{

@@ -32,6 +32,12 @@
     }
 
     &__wave-container{
+        position: relative;
+        img{
+            position: absolute;
+        }
         
+        
+
     }
 }

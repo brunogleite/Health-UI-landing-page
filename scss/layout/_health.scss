@@ -7,6 +7,10 @@
     position: relative;
     margin-top: 25em;
 
+    .wave-container-top{
+        transform: rotate(180deg);
+    }
+
     &__center{
         background-color: var(--bgHealth);
         min-height: 100vh;

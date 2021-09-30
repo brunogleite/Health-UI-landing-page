@@ -1,11 +1,16 @@
 @use '../abstracts/colors' as *;
 
-
+.wave-container-top{
+    position: relative;
+    transform: rotate(180deg);
+ }
 
 .onboard{
     min-height: 100vh;
     position: relative;
-  
+    //border: 13px solid green;
+    position: relative;
+
 
     &__center{
         background-color: var(--primaryColor);
