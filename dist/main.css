@@ -16,6 +16,10 @@
 
 .wave-container-top {
   transform: rotate(180deg);
+  margin-top: 10em;
+}
+.wave-container-top img {
+  position: absolute;
 }
 
 header {
@@ -156,6 +160,10 @@ header nav .list-items a {
   margin-left: 0.75em;
 }
 
+.wave-container-top {
+  position: relative;
+}
+
 .onboard {
   min-height: 100vh;
   position: relative;
@@ -203,9 +211,6 @@ header nav .list-items a {
   min-height: 100vh;
   position: relative;
   margin-top: 25em;
-}
-.health .wave-container-top {
-  transform: rotate(180deg);
 }
 .health__center {
   background-color: var(--bgHealth);
@@ -434,12 +439,13 @@ header nav .list-items a {
 .product__buy {
   display: grid;
   place-content: center;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 .product__buy-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -300px;
 }
 .product__buy-logo h1 {
   font-size: 4.5rem;
@@ -452,8 +458,8 @@ header nav .list-items a {
 }
 .wave-container-product img {
   position: absolute;
-  bottom: 0;
   left: 0;
+  bottom: 0;
 }
 
 .product {
@@ -466,7 +472,7 @@ header nav .list-items a {
 }
 .product__buy-mockup {
   position: relative;
-  margin-top: -350px;
+  margin-top: -550px;
 }
 @media only screen and (max-width: 1400px) {
   .product__buy-mockup {
