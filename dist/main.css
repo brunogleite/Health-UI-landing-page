@@ -13,6 +13,12 @@
   max-width: 1620px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1700px) {
+  .container-l {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+}
 
 .wave-container-top {
   transform: rotate(180deg);
@@ -29,9 +35,9 @@ header {
 }
 header nav {
   display: flex;
-  margin: 0 auto;
   padding-top: 1.3125em;
   padding-bottom: 1em;
+  border: 1px solid yellow;
 }
 header nav .logo {
   display: flex;
@@ -201,10 +207,20 @@ header nav .list-items a {
   top: -170px;
   left: 30%;
 }
+@media only screen and (max-width: 1685px) {
+  .onboard__bottom-mockup {
+    left: 25%;
+  }
+}
 .onboard__bottom-mockup .mockup-bottom-right {
   position: absolute;
   top: 60px;
   right: 0;
+}
+@media only screen and (max-width: 1685px) {
+  .onboard__bottom-mockup .mockup-bottom-right {
+    right: -120px;
+  }
 }
 
 .health {

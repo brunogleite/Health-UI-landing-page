@@ -51,12 +51,20 @@
             position: absolute;
             top: -170px;
             left: 30%;
+            @media only screen and (max-width: 1685px){
+                left: 25%;
+            }
             .mockup-bottom-right{
                 position: absolute;
                 top: 60px;
                 right: 0;
+                @media only screen and (max-width: 1685px){
+                    right: -120px;
+                }
             }
+         
             
+
         }
         
     }

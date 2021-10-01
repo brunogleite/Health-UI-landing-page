@@ -7,14 +7,12 @@
         font-weight: 700;
 
         nav{
-            //border: 1px solid red;
             display: flex;
-            margin: 0  auto;
             padding-top: 1.3125em;
             padding-bottom: 1em;
+            border: 1px solid yellow;
             
             .logo{
-                //border: 1px solid blue;
                 display: flex;
                 align-items: center;
 
@@ -26,7 +24,6 @@
             }
 
             .list-items{
-                //border: 1px solid pink;
                 display: flex;
                 align-items: center;
                 margin-left: auto;

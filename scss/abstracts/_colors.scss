@@ -14,6 +14,11 @@
 .container-l{
     max-width: 1620px;
     margin: 0 auto;
+
+    @media only screen and(max-width: 1700px){
+        max-width: 1180px;
+        margin: 0 auto;
+    }
 }
 
 .wave-container-top{
