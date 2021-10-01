@@ -37,7 +37,6 @@ header nav {
   display: flex;
   padding-top: 1.3125em;
   padding-bottom: 1em;
-  border: 1px solid yellow;
 }
 header nav .logo {
   display: flex;
