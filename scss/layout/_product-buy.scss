@@ -17,20 +17,32 @@
     }
 }
 
+.wave-container-product{
+    position: relative;
+    //border: 1px solid blue;
+
+    img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
 .product{
     min-height: 20vh;
     background-color: #F7FAFE;
     display: grid;
     place-content: center;
     text-align: center;
+    position: relative;
 
     &__buy{
 
         &-mockup{
             position: relative;
-            margin-top: -450px;
+            margin-top: -350px;
             @media only screen and (max-width: 1400px){
-                margin-top: -350px;
+                margin-top: -250px;
             }
         }
     }

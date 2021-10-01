@@ -14,6 +14,10 @@
   margin: 0 auto;
 }
 
+.wave-container-top {
+  transform: rotate(180deg);
+}
+
 header {
   background-color: var(--darkColor);
   color: var(--whiteColor);
@@ -150,11 +154,6 @@ header nav .list-items a {
 }
 .highlights__container-content-details-col1 .li p, .highlights__container-content-details-col2 .li p {
   margin-left: 0.75em;
-}
-
-.wave-container-top {
-  position: relative;
-  transform: rotate(180deg);
 }
 
 .onboard {
@@ -337,10 +336,7 @@ header nav .list-items a {
   margin-bottom: 3.6em;
 }
 .events__wave-container {
-  position: relative;
-}
-.events__wave-container img {
-  position: absolute;
+  background-color: #111;
 }
 
 .tickets {
@@ -451,20 +447,30 @@ header nav .list-items a {
   margin-top: -0.74em;
 }
 
+.wave-container-product {
+  position: relative;
+}
+.wave-container-product img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .product {
   min-height: 20vh;
   background-color: #F7FAFE;
   display: grid;
   place-content: center;
   text-align: center;
+  position: relative;
 }
 .product__buy-mockup {
   position: relative;
-  margin-top: -450px;
+  margin-top: -350px;
 }
 @media only screen and (max-width: 1400px) {
   .product__buy-mockup {
-    margin-top: -350px;
+    margin-top: -250px;
   }
 }
 .product-content a {
