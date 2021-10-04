@@ -24,10 +24,13 @@
 .wave-container-top{
     transform: rotate(180deg);
     margin-top: 10em;
+    //border: 1px solid blue;
    
 
     img{
-        position: absolute;
-        
+        position: relative;
+        left: 3px;
+        bottom: 1px;
+        width: 100vw;
     }
 }

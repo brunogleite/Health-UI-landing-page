@@ -25,7 +25,10 @@
   margin-top: 10em;
 }
 .wave-container-top img {
-  position: absolute;
+  position: relative;
+  left: 3px;
+  bottom: 1px;
+  width: 100vw;
 }
 
 header {
@@ -176,6 +179,10 @@ header nav .list-items a {
 
 .wave-container-top {
   position: relative;
+}
+.wave-container-top img {
+  position: relative;
+  left: 0;
 }
 
 .onboard {
@@ -367,6 +374,10 @@ header nav .list-items a {
 .events__wave-container {
   background-color: #111;
 }
+.events__wave-container img {
+  position: relative;
+  top: -1px;
+}
 
 .tickets {
   min-height: 100vh;
@@ -537,7 +548,7 @@ body {
   padding: 0;
 }
 
-img, svg {
+img {
   max-width: 100%;
 }
 

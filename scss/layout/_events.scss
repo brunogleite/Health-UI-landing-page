@@ -33,5 +33,10 @@
 
     &__wave-container{
         background-color: #111;
+        
+        img{
+            position: relative;
+            top: -1px;
+        }
     }
 }
