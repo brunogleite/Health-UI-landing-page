@@ -10,7 +10,7 @@
 }
 
 .container-l {
-  max-width: 1620px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 1700px) {
@@ -32,6 +32,9 @@ header {
   background-color: var(--darkColor);
   color: var(--whiteColor);
   font-weight: 700;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 header nav {
   display: flex;
@@ -60,6 +63,11 @@ header nav .list-items ul {
 header nav .list-items ul li + li {
   margin-left: 1.875em;
 }
+header nav .list-items ul li:hover {
+  color: var(--primaryColor);
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
 header nav .list-items a {
   margin-left: 3.3125em;
 }
@@ -76,6 +84,7 @@ header nav .list-items a {
   position: relative;
   z-index: -10;
   color: var(--whiteColor);
+  padding-top: 3.35em;
 }
 .homepage__row {
   display: flex;
@@ -528,7 +537,7 @@ body {
   padding: 0;
 }
 
-img {
+img, svg {
   max-width: 100%;
 }
 
@@ -552,6 +561,12 @@ a {
   cursor: pointer;
   border: none;
 }
+.cta-primary:hover {
+  background-color: #23292E;
+  color: white;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
 
 .cta-secondary,
 .cta-secondary-nav {
@@ -561,6 +576,12 @@ a {
   font-weight: 800;
   border-radius: 188px;
   cursor: pointer;
+}
+.cta-secondary:hover,
+.cta-secondary-nav:hover {
+  background-color: #fff;
+  color: var(--primaryColor);
+  transition: all 0.35s ease;
 }
 
 .cta-secondary-nav {

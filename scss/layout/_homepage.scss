@@ -11,6 +11,7 @@
     position: relative;
     z-index: -10;
     color: var(--whiteColor);
+    padding-top: 3.35em;
 
     &__row{
         display: flex;
@@ -99,5 +100,3 @@
 [class^="homepage__col-"]{
     margin-bottom: 2.1875em;
 }
-
-//homepage__col

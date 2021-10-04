@@ -1,4 +1,4 @@
-
+    @use '../abstracts/colors' as * ; 
 
     .cta-primary{
        
@@ -11,6 +11,13 @@
         border-radius: 188px;
         cursor: pointer;
         border: none;
+
+        &:hover{
+            background-color: #23292E;
+            color: white;
+            transition: all 0.35s ease;
+            cursor: pointer;
+        }
     }
 
 
@@ -23,6 +30,13 @@
         font-weight: 800;
         border-radius: 188px;
         cursor: pointer;
+
+
+        &:hover{
+            background-color: #fff;
+            color: var(--primaryColor);
+            transition: all .35s ease;
+        }
     }
 
     .cta-secondary-nav{

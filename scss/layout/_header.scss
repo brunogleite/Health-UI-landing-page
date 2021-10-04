@@ -5,7 +5,9 @@
         background-color: var(--darkColor);
         color: var(--whiteColor);
         font-weight: 700;
-
+        position: fixed;
+        width: 100%;
+        z-index: 10;
         nav{
             display: flex;
             padding-top: 1.3125em;
@@ -27,15 +29,28 @@
                 align-items: center;
                 margin-left: auto;
                 
+                
                 ul{
                     display: flex;
                     align-items: center;
                     list-style: none;
                     margin: 0;
                     padding: 0;
+                    
 
                     li + li{
                         margin-left: 1.875em;
+                    }
+
+                    li{
+
+
+                        &:hover{
+                            color: var(--primaryColor);
+                            cursor: pointer;
+                            transition: all .35s ease;
+                            
+                        }
                     }
                 }
 
