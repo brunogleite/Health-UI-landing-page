@@ -13,6 +13,12 @@
             padding-top: 1.3125em;
             padding-bottom: 1em;
 
+            a{
+                color: white;
+                text-decoration: none;
+                user-select: none;
+            }
+
             .logo{
                 display: flex;
                 align-items: center;
@@ -37,13 +43,17 @@
                     margin: 0;
                     padding: 0;
                     
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
 
                     li + li{
                         margin-left: 1.875em;
                     }
 
                     li{
-
+                        user-select: none;
 
                         &:hover{
                             color: var(--primaryColor);
@@ -52,11 +62,18 @@
                             
                         }
                     }
+
+                   
                 }
 
                 a{
+                    user-select: none;
                     margin-left: 3.3125em;
                 }
             }
         }
+    }
+
+    .active{
+        color: var(--primaryColor);
     }

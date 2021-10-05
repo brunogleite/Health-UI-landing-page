@@ -1,3 +1,5 @@
+@use '../abstracts/colors' as * ; 
+
 .product__buy{
     display: grid;
     place-content: center;
@@ -55,10 +57,28 @@
        
 
         a{
-            color: #8883F0;
+            color: #8883f0;
             font-size: 4.5rem;
             margin-bottom: 0.6em;
             font-weight: 700;
+            position: relative;
+   
+               &:hover{
+               
+                &::after{
+                    animation: underline 0.35s ease;
+                    content: "";
+                    position: absolute;
+                    left: 0%;
+                    bottom: 0;
+                    background-color: var(--primaryColor);
+                    width: 100%;
+                    height: 2px;
+                    border-radius: 8px;
+                }
+               }
+               
+        
         }
 
         p{
@@ -74,5 +94,16 @@
         a{
             color: #95989D;
         }
+    }
+}
+
+@keyframes underline{
+    from{
+        left: -100%;
+        opacity: 0;
+    }
+    to{
+        left: 0%;
+        opacity: 1;
     }
 }

@@ -12,23 +12,25 @@
     
    <header>
        <nav class="container-l">
-           <div class="logo">
-               <img src="/images/Health-UI-icon.png" alt="">
-               <span>Health.UI</span>
-           </div>
+          <a href="#homepage">
+            <div class="logo">
+                <img src="/images/Health-UI-icon.png" alt="">
+                <span>Health.UI</span>
+            </div>
+          </a> 
            <div class="list-items">
-               <ul>
-                   <li class="intro-link"> Intro </li>
-                   <li class="highlight-link"> Highlights </li>
-                   <li class="overview-link"> Overview </li>
-                   <li class="darkmode-link"> Darkmode </li>
+               <ul class="nav-links">
+                  <a href="#homepage"><li class="intro-link active">Intro</li></a> 
+                  <a href="#highlights"><li class="highlight-link">Highlights</li></a>
+                  <a href="#onboard"><li class="overview-link">Overview</li></a>
+                  <a href="#dark__mode"><li class="darkmode-link">Darkmode</li></a>
                </ul>
                <a class="cta-secondary-nav"> Buy Now </a>
            </div>
        </nav>
    </header>
 
-   <main class="homepage">
+   <main class="homepage" id="homepage">
        <div class="homepage__row container-l">
         <div class="homepage__col">
             <div class="homepage__col-intro">
@@ -37,8 +39,8 @@
                 <p>Health.UI is a premium UI Kit with 30+ health and<br> fitness screens which can help you to boost your<br> design process. Easy to customize to fit your style.</p>    
             </div>
             <div class="homepage__col-cta">
-                <a href="#" class="cta-primary"> Buy Now </a>
-                <a href="#" class="cta-secondary"> See More </a>
+                <a class="cta-primary"> Buy Now </a>
+                <a class="cta-secondary"> See More </a>
             </div>
             <div class="homepage__col-info">
                 <div class="homepage__col-info-screen">
@@ -63,7 +65,7 @@
        
    </main>
    <div class="faixa"></div>
-   <main class="highlights">
+   <main class="highlights" id="highlights">
         <div class="highlights__container">
             <div class="highlights__container-img">
                 <img src="/images/Highlights-screen.png" alt="">
@@ -113,7 +115,7 @@
 <div class="wave-container-top">
     <img src="/images//waves-useronboard-bottom.svg" alt="">
 </div> 
-   <main class="onboard">
+   <main class="onboard" id="onboard">
        <div class="onboard__center">
            <div class="onboard__center-left">
                <img src="/images/User-onboard-top-left.png" alt="">
@@ -187,7 +189,7 @@
         <div class="workouts__bottom-mockup">
              <img src="/images/Workouts-group.png" alt="">
              <img src="/images/Nutrition-group.png" alt="">
-            <div class="dark">
+            <div class="dark" id="dark__mode">
                 <h1>Time to go dark</h1>
                 <img src="/images/Vector-dark.svg" alt="">
             </div> 
@@ -197,7 +199,7 @@
      </div>   
    </main>
 
-   <main class="dark__mode">
+   <main class="dark__mode" >
         <div class="wave-container-top">
             <img src="/images/dark-mode-wave-bottom.svg" alt="">
         </div>

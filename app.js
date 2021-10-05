@@ -1,9 +1,11 @@
 //Get nav-links
-var introLink = document.querySelector(".intro-link");
-var hightlightLink = document.querySelector(".highlight-link");
-var overviewLink = document.querySelector(".overview-link");
-var darkmodeLink = document.querySelector(".darkmode-link");
+var navLinks = document.querySelectorAll(".nav-links li");
 
-introLink.addEventListener("click", (e)=>{
-    console.log(e)
+
+
+navLinks.forEach(link => {
+   link.addEventListener("click", ()=>{
+        navLinks.forEach(list => list.classList.remove("active"))
+        link.classList.add("active");  
+   })
 })
