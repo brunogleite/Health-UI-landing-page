@@ -37,7 +37,7 @@ header {
   font-weight: 700;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 30;
 }
 header nav {
   display: flex;
@@ -96,13 +96,14 @@ header nav .list-items a {
   width: 100%;
   height: 100px;
   background-color: white;
+  position: relative;
+  z-index: 20;
 }
 
 .homepage {
   background-color: var(--primaryColor);
   height: 100vh;
   position: relative;
-  z-index: -10;
   color: var(--whiteColor);
   padding-top: 3.35em;
 }
