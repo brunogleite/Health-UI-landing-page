@@ -58,13 +58,20 @@
     .features{
         flex-direction: column;
 
+        &__sleep{
+            width: 80%;
+            margin: 25px auto;
+        }
+
+        &__workout{
+            width: 80%;
+            margin: 25px auto;
+        }
+
         &__wave-container{
             //border: 1px solid blue;
-            position: relative;
+           display: none;
             
-            img:first-child{
-                display: none;
-            }
         }
     }
 }

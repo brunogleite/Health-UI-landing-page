@@ -62,14 +62,14 @@
         place-content: center;
         margin: 87px 0;
         &__container{
-            //border: 3px solid brown;
+           
     
             &-img{
                 display: none;
             }
 
             &-content{
-                //border: 3px solid red;
+       
     
                 &-center{
                     text-align: center;
@@ -93,7 +93,6 @@
                     font-weight: 700;
                     justify-content: space-between;
                     margin-bottom: 5.63em;
-                    border: 3px solid blue;
                     width: 80%;
                     margin: 0 auto;
                     &-col1, &-col2{
@@ -108,7 +107,7 @@
     
             &-img-mobile{
                 display: block;
-                width: 135%;
+                width: 155%;
                 transform: translateX(-60px);
             }
 

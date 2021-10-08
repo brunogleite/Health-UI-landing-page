@@ -44,10 +44,7 @@
 
 
         &-mockup{
-            //display: flex;
             width: 40%;
-            //margin: 0 auto; //nao funicona com position absolute
-            //border: 1px solid pink;
             position: relative;
             top: -160px;
             left: 30%;
@@ -106,7 +103,6 @@
                 text-align: center;
                 color: var(--whiteColor);
                 margin: 0;
-                border: 3px solid red;
                
     
                 h1{

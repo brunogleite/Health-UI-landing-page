@@ -246,7 +246,6 @@ header nav .nav-links li:hover {
 }
 .homepage__row .homepage__col {
   width: 50%;
-  border: 3px solid red;
 }
 .homepage__row .homepage__col-img {
   display: none;
@@ -310,7 +309,6 @@ header nav .nav-links li:hover {
     background-color: var(--primaryColor);
     color: var(--whiteColor);
     padding-top: 8em;
-    border: 3px solid green;
   }
   .homepage__row {
     display: block;
@@ -331,10 +329,10 @@ header nav .nav-links li:hover {
     padding-bottom: 1.4375em;
     padding-top: 0.5625em;
     width: 100%;
-    border: 3px solid blue;
   }
   .homepage__row .homepage__col-cta {
     white-space: nowrap;
+    padding-bottom: 67px;
   }
   .homepage__row .homepage__col-cta a {
     user-select: none;
@@ -423,7 +421,6 @@ header nav .nav-links li:hover {
     font-weight: 700;
     justify-content: space-between;
     margin-bottom: 5.63em;
-    border: 3px solid blue;
     width: 80%;
     margin: 0 auto;
   }
@@ -432,7 +429,7 @@ header nav .nav-links li:hover {
   }
   .highlights__container-img-mobile {
     display: block;
-    width: 135%;
+    width: 155%;
     transform: translateX(-60px);
   }
 }
@@ -507,12 +504,10 @@ header nav .nav-links li:hover {
   .onboard__center {
     background-color: var(--primaryColor);
     display: block;
-    border: 3px solid yellow;
   }
   .onboard__center-center {
     text-align: center;
     color: var(--whiteColor);
-    border: 3px solid red;
     width: 100%;
     margin: 103px auto;
   }
@@ -712,7 +707,6 @@ header nav .nav-links li:hover {
     text-align: center;
     color: var(--whiteColor);
     margin: 0;
-    border: 3px solid red;
   }
   .workouts__center-center h1 {
     font-size: 2.5rem;
@@ -850,7 +844,6 @@ header nav .nav-links li:hover {
   .events__center-center {
     text-align: center;
     color: white;
-    border: 3px solid yellow;
     width: 100%;
     margin: 30px 0;
     grid-column: 1/-1;
@@ -934,6 +927,9 @@ header nav .nav-links li:hover {
 .charts__container-content p {
   line-height: 28px;
 }
+.charts__container-mockup .mockup-mobile {
+  display: none;
+}
 .charts__wave-container {
   position: relative;
 }
@@ -942,6 +938,14 @@ header nav .nav-links li:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .charts__container-mockup .mockup-desktop {
+    display: none;
+  }
+  .charts__container-mockup .mockup-mobile {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
   .charts__wave-container {
     display: none;
   }
@@ -993,10 +997,15 @@ header nav .nav-links li:hover {
   .features {
     flex-direction: column;
   }
-  .features__wave-container {
-    position: relative;
+  .features__sleep {
+    width: 80%;
+    margin: 25px auto;
   }
-  .features__wave-container img:first-child {
+  .features__workout {
+    width: 80%;
+    margin: 25px auto;
+  }
+  .features__wave-container {
     display: none;
   }
 }

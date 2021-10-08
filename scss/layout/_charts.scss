@@ -8,6 +8,8 @@
         transform: rotate(180deg);
     }
 
+
+
     &__container{
         text-align: center;
         color: #fff;
@@ -24,6 +26,12 @@
                 
             }
         }
+
+        &-mockup{
+            .mockup-mobile{
+                display: none;
+            }
+        }
     }
 
     &__wave-container{
@@ -37,6 +45,21 @@
 @media only screen and (max-width: 768px){
 
     .charts{
+
+        &__container-mockup{
+
+            .mockup-desktop{
+                display: none;
+            }
+
+            .mockup-mobile{
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+
         &__wave-container{
             display: none;
         }

@@ -83,17 +83,14 @@
     .onboard{
         position: relative;
         min-height: 100vh;
-
         &__center{
             background-color: var(--primaryColor);
             display: block;
-            border: 3px solid yellow;
             
     
             &-center{
                 text-align: center;
                 color: var(--whiteColor);
-                border: 3px solid red;
                 width: 100%;
                 margin: 103px auto;
                 h1{
