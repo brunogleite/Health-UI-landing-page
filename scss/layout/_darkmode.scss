@@ -20,5 +20,31 @@
 }
 
 @media only screen and (max-width: 768px){
+
+    .dark__mode{
+        position: relative;
     
+        &-wave-container-top{
+            transform: rotate(180deg);
+            display: none;
+        }
+    
+        &-components{
+            background-color: #111;
+            width: 100%;
+
+            img{
+                
+                padding: 20px 0;
+                max-height: 450px;
+                overflow: hidden;
+            }
+        }
+    
+        &-wave-container{
+            display: none;
+        }
+    
+    
+    }
 }

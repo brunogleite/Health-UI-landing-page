@@ -21,7 +21,7 @@
 }
 @media only screen and (max-width: 768px) {
   .container-l {
-    max-width: 704px;
+    max-width: 311px;
     margin: 0 auto;
   }
 }
@@ -52,6 +52,7 @@ header {
 }
 header nav {
   display: flex;
+  align-items: center;
   padding-top: 1.3125em;
   padding-bottom: 1em;
 }
@@ -59,6 +60,7 @@ header nav a {
   color: white;
   text-decoration: none;
   user-select: none;
+  z-index: 12;
 }
 header nav .logo {
   display: flex;
@@ -67,36 +69,58 @@ header nav .logo {
 header nav .logo span {
   font-size: 1rem;
 }
-header nav .list-items {
-  display: flex;
+header nav .hamburguer {
+  width: 28px;
+  height: 16px;
+  display: none;
   align-items: center;
+  position: relative;
+  cursor: pointer;
   margin-left: auto;
 }
-header nav .list-items ul {
+header nav .hamburguer__menu {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  z-index: 11;
+  transition: all 0.5s ease-in-out;
+}
+header nav .hamburguer__menu::before, header nav .hamburguer__menu::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+header nav .hamburguer__menu::before {
+  transform: translateY(8px);
+}
+header nav .hamburguer__menu::after {
+  transform: translateY(-8px);
+}
+header nav .nav-links {
   display: flex;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: auto;
 }
-header nav .list-items ul a {
+header nav .nav-links a {
   text-decoration: none;
   color: white;
-}
-header nav .list-items ul li + li {
-  margin-left: 1.875em;
-}
-header nav .list-items ul li {
+  margin-left: 3.3125em;
   user-select: none;
 }
-header nav .list-items ul li:hover {
+header nav .nav-links li {
+  user-select: none;
+}
+header nav .nav-links li:hover {
   color: var(--primaryColor);
   cursor: pointer;
   transition: all 0.35s ease;
-}
-header nav .list-items a {
-  user-select: none;
-  margin-left: 3.3125em;
 }
 
 .active {
@@ -111,40 +135,13 @@ header nav .list-items a {
     position: fixed;
     width: 100%;
     z-index: 30;
+    /*animation*/
   }
   header nav {
     display: flex;
     align-items: center;
     padding-top: 1.3125em;
     padding-bottom: 1em;
-  }
-  header nav .hamburguer {
-    width: 28px;
-    height: 16px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    margin-left: auto;
-  }
-  header nav .hamburguer__menu {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    position: absolute;
-  }
-  header nav .hamburguer__menu::before, header nav .hamburguer__menu::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-  }
-  header nav .hamburguer__menu::before {
-    transform: translateY(8px);
-  }
-  header nav .hamburguer__menu::after {
-    transform: translateY(-8px);
   }
   header nav a {
     color: white;
@@ -158,34 +155,69 @@ header nav .list-items a {
   header nav .logo span {
     font-size: 1rem;
   }
-  header nav .list-items {
+  header nav .hamburguer {
+    display: flex;
+    cursor: pointer;
+  }
+  header nav .nav-links {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #23292E;
+    transition: top 1s ease;
     display: none;
   }
-  header nav .list-items ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  header nav .list-items ul a {
+  header nav .nav-links a {
     text-decoration: none;
     color: white;
-  }
-  header nav .list-items ul li + li {
-    margin-left: 1.875em;
-  }
-  header nav .list-items ul li {
+    margin-right: auto;
+    margin-top: 35px;
+    margin-left: 40px;
     user-select: none;
   }
-  header nav .list-items ul li:hover {
+  header nav .nav-links li {
+    user-select: none;
+    font-size: 42px;
+  }
+  header nav .nav-links li:hover {
     color: var(--primaryColor);
     cursor: pointer;
     transition: all 0.35s ease;
   }
-  header nav .list-items a {
-    user-select: none;
-    margin-left: 3.3125em;
+  header nav .nav-links .btn-nav {
+    width: 80%;
+    text-align: center;
+    font-size: 19px;
+  }
+  header .active {
+    color: var(--primaryColor);
+  }
+  header .active::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primaryColor);
+    transition: all 0.5s ease;
+  }
+  header .hamburguer.open .hamburguer__menu {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  header .hamburguer.open .hamburguer__menu::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  header .hamburguer.open .hamburguer__menu::after {
+    transform: rotate(-45deg) translate(35px, 35px);
   }
 }
 .faixa {
@@ -275,7 +307,7 @@ header nav .list-items a {
     height: 100vh;
     position: relative;
     color: var(--whiteColor);
-    padding-top: 3.35em;
+    padding-top: 0em;
   }
   .homepage__row {
     display: flex;
@@ -289,6 +321,7 @@ header nav .list-items a {
   }
   .homepage__row .homepage__col-img {
     display: block;
+    padding-top: 500px;
   }
   .homepage__row .homepage__col-intro h1 {
     font-size: 2.5rem;
@@ -299,6 +332,9 @@ header nav .list-items a {
     line-height: 28px;
     margin-bottom: 1.4375em;
     margin-top: 0.5625em;
+  }
+  .homepage__row .homepage__col-cta {
+    white-space: nowrap;
   }
   .homepage__row .homepage__col-cta a {
     user-select: none;
@@ -728,6 +764,27 @@ header nav .list-items a {
   position: absolute;
 }
 
+@media only screen and (max-width: 768px) {
+  .dark__mode {
+    position: relative;
+  }
+  .dark__mode-wave-container-top {
+    transform: rotate(180deg);
+    display: none;
+  }
+  .dark__mode-components {
+    background-color: #111;
+    width: 100%;
+  }
+  .dark__mode-components img {
+    padding: 20px 0;
+    max-height: 450px;
+    overflow: hidden;
+  }
+  .dark__mode-wave-container {
+    display: none;
+  }
+}
 .events {
   min-height: 100vh;
   background-color: #262B37;

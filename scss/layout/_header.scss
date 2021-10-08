@@ -8,8 +8,10 @@
         position: fixed;
         width: 100%;
         z-index: 30;
+
         nav{
             display: flex;
+            align-items: center;
             padding-top: 1.3125em;
             padding-bottom: 1em;
 
@@ -17,12 +19,15 @@
                 color: white;
                 text-decoration: none;
                 user-select: none;
+                z-index: 12;
+                
             }
 
             .logo{
                 display: flex;
                 align-items: center;
-
+               
+                
 
                 span{
                     font-size: 1rem;
@@ -30,27 +35,65 @@
                 }
             }
 
-            .list-items{
-                display: flex;
+            .hamburguer{
+                width: 28px;
+                height: 16px;
+                display: none;
                 align-items: center;
+                position: relative;
+                cursor: pointer;
                 margin-left: auto;
+
+                &__menu{
+                    width: 100%;
+                    height: 3px;
+                    background-color: white ;
+                    position: absolute;
+                    z-index: 11;
+                    transition: all .5s ease-in-out;
+
+                    &::before, &::after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        background-color: #fff ;
+                        transition: all .5s ease-in-out;
+                    }
+
+                    &::before{
+                        transform: translateY(8px);
+                    }
+
+                    &::after{
+                        transform: translateY(-8px);
+                    }
+
+                  
+
+                }
+
+                
+            }
                 
                 
-                ul{
+                .nav-links{
                     display: flex;
                     align-items: center;
                     list-style: none;
                     margin: 0;
                     padding: 0;
+                    margin-left: auto;
+                    
                     
                     a{
                         text-decoration: none;
                         color: white;
+                        margin-left: 3.3125em;
+                        user-select: none;
                     }
 
-                    li + li{
-                        margin-left: 1.875em;
-                    }
+                   
 
                     li{
                         user-select: none;
@@ -63,22 +106,19 @@
                         }
                     }
 
-                   
+            
                 }
 
-                a{
-                    user-select: none;
-                    margin-left: 3.3125em;
-                }
+                
             }
         }
-    }
 
     .active{
         color: var(--primaryColor);
     }
 
     @media only screen and (max-width: 768px){
+
         header{
             background-color: var(--darkColor);
             color: var(--whiteColor);
@@ -86,59 +126,25 @@
             position: fixed;
             width: 100%;
             z-index: 30;
+
             nav{
                 display: flex;
                 align-items: center;
                 padding-top: 1.3125em;
                 padding-bottom: 1em;
-
-                .hamburguer{
-                    width: 28px;
-                    height: 16px;
-                    display: flex;
-                    align-items: center;
-                    position: relative;
-                    cursor: pointer;
-                    margin-left: auto;
-                    &__menu{
-                        width: 100%;
-                        height: 3px;
-                        background-color: white ;
-                        position: absolute;
-
-                        &::before, &::after{
-                            content: "";
-                            position: absolute;
-                            width: 100%;
-                            height: 3px;
-                            background-color: #fff ;
-                        }
-
-                        &::before{
-                            transform: translateY(8px);
-                        }
-
-                        &::after{
-                            transform: translateY(-8px);
-                        }
-
-                      
-
-                    }
-
-                    
-                }
+                
     
                 a{
                     color: white;
                     text-decoration: none;
                     user-select: none;
+                
                 }
     
                 .logo{
                     display: flex;
                     align-items: center;
-    
+                    
     
                     span{
                         font-size: 1rem;
@@ -146,28 +152,43 @@
                     }
                 }
     
-                .list-items{
-                    display: none;
+                .hamburguer{
+                    display: flex;
+                    cursor: pointer;
+                }
+               
                     
                     
-                    ul{
-                        display: flex;
+                    .nav-links{
+                        height: 100vh;
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        z-index: 10;
+                        flex-direction: column;
+                        justify-content: center;
                         align-items: center;
-                        list-style: none;
-                        margin: 0;
-                        padding: 0;
+                        background-color: #23292E;
+                        transition: top 1s ease;
+                        display: none;
                         
-                        a{
+
+                        a {
                             text-decoration: none;
                             color: white;
+                            margin-right: auto;
+                            margin-top: 35px;
+                            margin-left: 40px;
+                            user-select: none;
                         }
+
+                       
     
-                        li + li{
-                            margin-left: 1.875em;
-                        }
     
                         li{
                             user-select: none;
+                            font-size: 42px;
     
                             &:hover{
                                 color: var(--primaryColor);
@@ -177,14 +198,50 @@
                             }
                         }
     
+                        .btn-nav{
+                            width: 80%;
+                            text-align: center;
+                            font-size: 19px;
+                        }
                        
                     }
     
-                    a{
-                        user-select: none;
-                        margin-left: 3.3125em;
+                    
+                }
+
+                .active{
+                    color: var(--primaryColor);
+        
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 3px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: var(--primaryColor);
+                        transition: all 0.5s ease;
                     }
                 }
+
+
+                /*animation*/
+
+                .hamburguer.open .hamburguer__menu{
+                    transform: translateX(-50px);
+                    background: transparent;
+                    box-shadow: none;
+                }
+                
+                .hamburguer.open .hamburguer__menu::before{
+                 transform: rotate(45deg) translate(35px, -35px) ;
+                }
+                
+                .hamburguer.open .hamburguer__menu::after{
+                    transform: rotate(-45deg) translate(35px, 35px);
+                }
+
             }
-        }
+    
+        
     }

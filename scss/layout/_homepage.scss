@@ -126,10 +126,9 @@
         height: 100vh;
         position: relative;
         color: var(--whiteColor);
-        padding-top: 3.35em;
+        padding-top: 0em;
 
         &__row{
-           
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -141,9 +140,11 @@
                 //border: 3px solid red;
                 max-width: 100%;
                 width: 100%;
+               
 
                 &-img{
                     display: block;
+                    padding-top: 500px;
                 }
 
                 &-intro{
@@ -164,8 +165,10 @@
                 }
         
                 &-cta{
+                    white-space: nowrap;
                     a{
                         user-select: none;
+                        
                         
                     }
         
