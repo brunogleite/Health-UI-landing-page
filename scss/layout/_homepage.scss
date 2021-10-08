@@ -11,8 +11,7 @@
 
 .homepage{
     background-color: var(--primaryColor);
-    height: 100vh;
-    position: relative;
+    min-height: 100%;
     color: var(--whiteColor);
     padding-top: 3.35em;
     &__row{
@@ -124,9 +123,9 @@
     .homepage{
         background-color: var(--primaryColor);
         height: 100vh;
-        position: relative;
         color: var(--whiteColor);
         padding-top: 0em;
+        border: 3px solid green;
 
         &__row{
             display: flex;

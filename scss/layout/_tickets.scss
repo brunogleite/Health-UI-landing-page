@@ -15,3 +15,11 @@
 .tickets__wave-container{
     position: absolute;
 }
+
+
+@media only screen and (max-width: 768px){
+
+    .tickets__wave-container{
+        display: none;
+    }
+}
