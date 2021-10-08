@@ -23,6 +23,10 @@
         height: 100vh;
         .homepage__col{
             max-width: 50%;
+
+            &-img{
+                display: none;
+            }
     
             &-intro{
                 h1{
@@ -108,4 +112,97 @@
 
 [class^="homepage__col-"]{
     margin-bottom: 2.1875em;
+}
+
+
+@media only screen and (max-width: 768px){
+    .faixa{
+        display: none;
+    }
+    
+    
+    .homepage{
+        background-color: var(--primaryColor);
+        height: 100vh;
+        position: relative;
+        color: var(--whiteColor);
+        padding-top: 3.35em;
+
+        &__row{
+           
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            //border: 3px solid yellow;
+            
+            .homepage__col{
+                
+                //border: 3px solid red;
+                max-width: 100%;
+                width: 100%;
+
+                &-img{
+                    display: block;
+                }
+
+                &-intro{
+                    h1{
+                        font-size: 2.5rem;
+                        font-weight: 700;
+                    }
+        
+                    p{
+                        font-weight: 500;
+                        line-height: 28px;
+                        margin-bottom: 1.4375em;
+                        margin-top: 0.5625em;
+                    
+                    }
+    
+                    
+                }
+        
+                &-cta{
+                    a{
+                        user-select: none;
+                        
+                    }
+        
+                    .cta-secondary{
+                        margin-left: 1.5em;
+                    }
+                }
+        
+                &-info{
+                    display: none;
+                        
+                    &-figma{
+                        p{
+                            margin-bottom: 1em;
+                        }
+            
+                        img{
+                            
+                            margin: -8px 0 0 -17px;
+                        }
+                    }
+                }
+        
+        
+               
+            }
+
+            .homepage__col-two{
+                display: none;
+                width: 0;
+            }
+
+            
+    
+        }
+    
+        
+    
+    }
 }

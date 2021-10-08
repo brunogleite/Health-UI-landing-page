@@ -13,7 +13,6 @@
 .onboard{
     min-height: 100vh;
     position: relative;
-    position: relative;
 
 
     &__center{
@@ -73,4 +72,94 @@
         
     }
     
+}
+
+@media only screen and (max-width: 768px){
+
+    .onboard{
+        position: relative;
+        min-height: 100vh;
+
+        &__center{
+            background-color: var(--primaryColor);
+            display: block;
+            border: 3px solid yellow;
+    
+            &-center{
+                text-align: center;
+                color: var(--whiteColor);
+                border: 3px solid red;
+                width: 70%;
+                margin-right: auto;
+                margin-left: auto;
+                h1{
+                    font-size: 2.5rem;
+                    margin-bottom: 0.8em;
+                }
+    
+                p{
+                    line-height: 28px;
+                    margin-bottom: 3.6em;
+                    
+                }
+    
+            }
+
+            &-left , &-right{
+               border: 3px solid blue;
+                
+            
+
+
+            }
+
+            &-left{
+                position: relative;
+                right: 80px;
+                bottom: -1200px;
+            }
+
+            &-right{
+                position: relative;
+                right: -180px;
+                bottom: -330px;
+            }
+    
+            
+        }
+    
+        &__bottom{
+            text-align: center;
+            position: relative;
+    
+    
+            &-mockup{
+                display: flex;
+                width: 40%;
+                position: absolute;
+                top: -170px;
+                left: 30%;
+                @media only screen and (max-width: 1685px){
+                    left: 25%;
+                }
+                .mockup-bottom-right{
+                    position: absolute;
+                    top: 60px;
+                    right: 0;
+                    @media only screen and (max-width: 1685px){
+                        right: -120px;
+                    }
+                }
+             
+                
+    
+            }
+
+            .wave-container{
+                display: none;
+            }
+            
+        }
+        
+    }
 }

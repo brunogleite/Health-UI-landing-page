@@ -77,3 +77,114 @@
     .active{
         color: var(--primaryColor);
     }
+
+    @media only screen and (max-width: 768px){
+        header{
+            background-color: var(--darkColor);
+            color: var(--whiteColor);
+            font-weight: 700;
+            position: fixed;
+            width: 100%;
+            z-index: 30;
+            nav{
+                display: flex;
+                align-items: center;
+                padding-top: 1.3125em;
+                padding-bottom: 1em;
+
+                .hamburguer{
+                    width: 28px;
+                    height: 16px;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    cursor: pointer;
+                    margin-left: auto;
+                    &__menu{
+                        width: 100%;
+                        height: 3px;
+                        background-color: white ;
+                        position: absolute;
+
+                        &::before, &::after{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 3px;
+                            background-color: #fff ;
+                        }
+
+                        &::before{
+                            transform: translateY(8px);
+                        }
+
+                        &::after{
+                            transform: translateY(-8px);
+                        }
+
+                      
+
+                    }
+
+                    
+                }
+    
+                a{
+                    color: white;
+                    text-decoration: none;
+                    user-select: none;
+                }
+    
+                .logo{
+                    display: flex;
+                    align-items: center;
+    
+    
+                    span{
+                        font-size: 1rem;
+                       
+                    }
+                }
+    
+                .list-items{
+                    display: none;
+                    
+                    
+                    ul{
+                        display: flex;
+                        align-items: center;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
+    
+                        li + li{
+                            margin-left: 1.875em;
+                        }
+    
+                        li{
+                            user-select: none;
+    
+                            &:hover{
+                                color: var(--primaryColor);
+                                cursor: pointer;
+                                transition: all .35s ease;
+                                
+                            }
+                        }
+    
+                       
+                    }
+    
+                    a{
+                        user-select: none;
+                        margin-left: 3.3125em;
+                    }
+                }
+            }
+        }
+    }

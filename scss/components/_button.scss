@@ -53,3 +53,30 @@
         padding: 1em 2.5em;
 
     }
+
+    @media only screen and (max-width: 768px){
+        .cta-primary{
+       
+            font-size: 12.91px;
+            padding: 1.33em 3.958em;
+            background-color: white;
+            color: #23292E;
+            font-family: "Manrope", sans-serif;
+            font-weight: 800;
+            border-radius: 188px;
+            cursor: pointer;
+            border: none;
+    
+            &:hover{
+                background-color: #23292E;
+                color: white;
+                transition: all 0.35s ease;
+                cursor: pointer;
+            }
+        }
+
+        .cta-secondary{
+            font-size: 12.91px;
+            padding: 1.33em 3.958em;
+        }
+    }
