@@ -21,6 +21,12 @@
 }
 @media only screen and (max-width: 768px) {
   .container-l {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container-l {
     max-width: 311px;
     margin: 0 auto;
   }
@@ -324,6 +330,8 @@ header nav .nav-links li:hover {
     line-height: 28px;
     padding-bottom: 1.4375em;
     padding-top: 0.5625em;
+    width: 100%;
+    border: 3px solid blue;
   }
   .homepage__row .homepage__col-cta {
     white-space: nowrap;
@@ -332,15 +340,17 @@ header nav .nav-links li:hover {
     user-select: none;
   }
   .homepage__row .homepage__col-cta .cta-secondary {
-    margin-left: 1.5em;
+    margin-left: 0.7em;
   }
   .homepage__row .homepage__col-info {
     display: none;
   }
-  .homepage__row .homepage__col-info-figma p {
+  .homepage__row .homepage__col-figma p {
+    display: none;
     margin-bottom: 1em;
   }
-  .homepage__row .homepage__col-info-figma img {
+  .homepage__row .homepage__col-figma img {
+    display: none;
     margin: -8px 0 0 -17px;
   }
   .homepage__row .homepage__col-two {
@@ -412,12 +422,17 @@ header nav .nav-links li:hover {
     font-weight: 700;
     justify-content: space-between;
     margin-bottom: 5.63em;
+    border: 3px solid blue;
+    width: 80%;
+    margin: 0 auto;
   }
   .highlights__container-content-details-col1 p, .highlights__container-content-details-col2 p {
     margin-left: 0.75em;
   }
   .highlights__container-img-mobile {
     display: block;
+    width: 135%;
+    transform: translateX(-60px);
   }
 }
 .wave-container-top {
@@ -766,7 +781,8 @@ header nav .nav-links li:hover {
   }
   .dark__mode-components {
     background-color: #111;
-    width: 100%;
+    width: 180%;
+    transform: translateX(-100px);
   }
   .dark__mode-components img {
     padding: 20px 0;
@@ -833,7 +849,7 @@ header nav .nav-links li:hover {
     color: white;
     border: 3px solid yellow;
     width: 100%;
-    margin: 0;
+    margin: 30px 0;
     grid-column: 1/-1;
   }
   .events__center-center h1 {
@@ -849,11 +865,15 @@ header nav .nav-links li:hover {
   }
   .events__center-left {
     grid-row: 2/3;
+    margin-bottom: 80px;
+    transform: translateX(-30px);
   }
   .events__center-right {
     align-self: flex-end;
     grid-column: 3/4;
     grid-row: 2/3;
+    margin-bottom: 40px;
+    transform: translateX(30px);
   }
   .events__wave-container {
     display: none;
@@ -878,6 +898,10 @@ header nav .nav-links li:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .tickets img {
+    transform: scale(2.5);
+  }
+
   .tickets__wave-container {
     display: none;
   }
@@ -1069,6 +1093,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 img {

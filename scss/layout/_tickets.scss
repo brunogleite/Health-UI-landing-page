@@ -18,7 +18,12 @@
 
 
 @media only screen and (max-width: 768px){
-
+    .tickets{
+        
+        img{
+            transform: scale(2.5);
+        }
+    }
     .tickets__wave-container{
         display: none;
     }

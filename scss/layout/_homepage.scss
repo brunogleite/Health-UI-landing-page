@@ -156,6 +156,8 @@
                         line-height: 28px;
                         padding-bottom: 1.4375em;
                         padding-top: 0.5625em;
+                        width: 100%;
+                        border: 3px solid blue;
                     
                     }
     
@@ -171,22 +173,24 @@
                     }
         
                     .cta-secondary{
-                        margin-left: 1.5em;
+                        margin-left: 0.7em;
                     }
                 }
         
                 &-info{
                     display: none;
-                        
-                    &-figma{
-                        p{
-                            margin-bottom: 1em;
-                        }
-            
-                        img{
-                            
-                            margin: -8px 0 0 -17px;
-                        }
+                }
+
+                &-figma{
+                    
+                    p{
+                        display: none;
+                        margin-bottom: 1em;
+                    }
+        
+                    img{
+                        display: none;
+                        margin: -8px 0 0 -17px;
                     }
                 }
         
