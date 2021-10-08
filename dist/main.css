@@ -362,6 +362,7 @@ header nav .nav-links li:hover {
   min-height: 100vh;
   display: grid;
   place-content: center;
+  overflow-x: hidden;
 }
 .highlights__container-content-center {
   text-align: center;
@@ -757,6 +758,7 @@ header nav .nav-links li:hover {
 }
 .dark__mode {
   position: relative;
+  overflow-x: hidden;
 }
 .dark__mode-wave-container-top {
   transform: rotate(180deg);
@@ -796,6 +798,7 @@ header nav .nav-links li:hover {
 .events {
   min-height: 100vh;
   background-color: #262B37;
+  overflow-x: hidden;
 }
 .events__center {
   display: grid;
@@ -885,6 +888,7 @@ header nav .nav-links li:hover {
   display: flex;
   align-items: flex-end;
   position: relative;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 1416px) {
   .tickets {
@@ -1093,11 +1097,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-}
-
-header {
-  overflow-x: hidden;
 }
 
 img {
