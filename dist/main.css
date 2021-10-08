@@ -539,7 +539,57 @@ header nav .list-items a {
   top: -22em;
   margin: 0 auto;
 }
+.health__bottom-top-mobile, .health__bottom-bottom-mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 768px) {
+  .health {
+    min-height: 100vh;
+    margin-top: 0;
+  }
+  .health__center {
+    background-color: var(--bgHealth);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    align-items: center;
+  }
+  .health__center-center {
+    text-align: center;
+    color: var(--whiteColor);
+    margin: 0 6.8em;
+  }
+  .health__center-center h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.8em;
+  }
+  .health__center-center p {
+    line-height: 28px;
+    margin-bottom: 3.6em;
+  }
+  .health__center-center a {
+    white-space: nowrap;
+  }
+  .health__center-left, .health__center-right {
+    display: none;
+  }
+  .health__bottom {
+    text-align: center;
+    position: static;
+    top: 0;
+    background-color: var(--bgHealth);
+  }
+  .health__bottom-top-mobile, .health__bottom-bottom-mobile {
+    display: block;
+  }
+  .health__bottom .mockup-desktop {
+    display: none;
+  }
+  .health .wave-container {
+    display: none;
+  }
+}
 .workouts {
   min-height: 100vh;
   position: relative;
@@ -581,15 +631,15 @@ header nav .list-items a {
 .workouts__bottom-mockup img + img {
   margin-top: 7.6em;
 }
-.workouts__bottom-mockup .dark {
+.workouts__bottom .dark {
   margin-top: 7.4em;
   position: relative;
   top: 150px;
 }
-.workouts__bottom-mockup .dark h1 {
+.workouts__bottom .dark h1 {
   font-size: 3.5rem;
 }
-.workouts__bottom-mockup .dark img {
+.workouts__bottom .dark img {
   margin-top: 2.1em;
 }
 .workouts__bottom .wave-container {
@@ -597,7 +647,71 @@ header nav .list-items a {
   top: 0;
   z-index: -20;
 }
+.workouts__bottom-mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 768px) {
+  .workouts {
+    min-height: 100vh;
+    position: relative;
+  }
+  .workouts .wave-container-top {
+    display: none;
+  }
+  .workouts__center {
+    background-color: var(--primaryColor);
+    min-height: 100vh;
+    display: flex;
+  }
+  .workouts__center-center {
+    text-align: center;
+    color: var(--whiteColor);
+    margin: 0;
+    border: 3px solid red;
+  }
+  .workouts__center-center h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.8em;
+  }
+  .workouts__center-center p {
+    line-height: 28px;
+    margin-bottom: 3.6em;
+  }
+  .workouts__center-left, .workouts__center-right {
+    display: none;
+  }
+  .workouts__bottom {
+    text-align: center;
+    position: relative;
+  }
+  .workouts__bottom-mobile {
+    display: block;
+    background-color: var(--primaryColor);
+  }
+  .workouts__bottom-mockup {
+    display: none;
+  }
+  .workouts__bottom-mockup img + img {
+    margin-top: 0;
+  }
+  .workouts__bottom .dark {
+    display: block;
+    margin-top: 93px;
+    position: static;
+  }
+  .workouts__bottom .dark h1 {
+    font-size: 1.875rem;
+  }
+  .workouts__bottom .dark img {
+    margin-top: 1.1em;
+    z-index: 10;
+    position: relative;
+  }
+  .workouts__bottom .wave-container {
+    display: none;
+  }
+}
 .dark__mode {
   position: relative;
 }
