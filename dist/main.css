@@ -351,6 +351,9 @@ header nav .list-items a {
 .highlights__container-content-details-col1 .li p, .highlights__container-content-details-col2 .li p {
   margin-left: 0.75em;
 }
+.highlights__container-img-mobile {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
   .highlights {
@@ -385,6 +388,9 @@ header nav .list-items a {
   .highlights__container-content-details-col1 p, .highlights__container-content-details-col2 p {
     margin-left: 0.75em;
   }
+  .highlights__container-img-mobile {
+    display: block;
+  }
 }
 .wave-container-top {
   position: relative;
@@ -418,6 +424,9 @@ header nav .list-items a {
 .onboard__center-center p {
   line-height: 28px;
   margin-bottom: 3.6em;
+}
+.onboard__center-bottom {
+  display: none;
 }
 .onboard__bottom {
   text-align: center;
@@ -460,9 +469,8 @@ header nav .list-items a {
     text-align: center;
     color: var(--whiteColor);
     border: 3px solid red;
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    margin: 103px auto;
   }
   .onboard__center-center h1 {
     font-size: 2.5rem;
@@ -473,48 +481,25 @@ header nav .list-items a {
     margin-bottom: 3.6em;
   }
   .onboard__center-left, .onboard__center-right {
-    border: 3px solid blue;
+    display: none;
   }
-  .onboard__center-left {
-    position: relative;
-    right: 80px;
-    bottom: -1200px;
+  .onboard__center-bottom {
+    display: block;
+    width: 100%;
+    margin: 0;
   }
-  .onboard__center-right {
-    position: relative;
-    right: -180px;
-    bottom: -330px;
+}
+@media only screen and (max-width: 768px) and (min-width: 520px) {
+  .onboard__center-bottom {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+@media only screen and (max-width: 768px) {
   .onboard__bottom {
-    text-align: center;
-    position: relative;
+    display: none;
   }
-  .onboard__bottom-mockup {
-    display: flex;
-    width: 40%;
-    position: absolute;
-    top: -170px;
-    left: 30%;
-  }
-}
-@media only screen and (max-width: 768px) and (max-width: 1685px) {
-  .onboard__bottom-mockup {
-    left: 25%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .onboard__bottom-mockup .mockup-bottom-right {
-    position: absolute;
-    top: 60px;
-    right: 0;
-  }
-}
-@media only screen and (max-width: 768px) and (max-width: 1685px) {
-  .onboard__bottom-mockup .mockup-bottom-right {
-    right: -120px;
-  }
-}
-@media only screen and (max-width: 768px) {
   .onboard__bottom .wave-container {
     display: none;
   }
@@ -544,6 +529,9 @@ header nav .list-items a {
 .health__center-center p {
   line-height: 28px;
   margin-bottom: 3.6em;
+}
+.health__center-center a {
+  white-space: nowrap;
 }
 .health__bottom {
   text-align: center;
@@ -629,28 +617,35 @@ header nav .list-items a {
 .events {
   min-height: 100vh;
   background-color: #262B37;
-  display: grid;
-  place-content: center;
 }
 .events__center {
-  min-height: 100vh;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 100vh;
   place-content: center;
-  align-items: center;
-  display: flex;
 }
 .events__center-center {
+  grid-column: 2/3;
   text-align: center;
-  color: var(--whiteColor);
-  margin: 0 6.8em;
+  align-self: center;
 }
 .events__center-center h1 {
   font-size: 2.5rem;
   margin-bottom: 0.8em;
+  color: white;
 }
 .events__center-center p {
   line-height: 28px;
   margin-bottom: 3.6em;
+  color: white;
+}
+.events__center-left {
+  justify-self: center;
+  grid-column: 1/2;
+}
+.events__center-right {
+  justify-self: center;
+  grid-column: 3/4;
 }
 .events__wave-container {
   background-color: #111;
@@ -664,22 +659,19 @@ header nav .list-items a {
   .events {
     min-height: 100vh;
     background-color: #262B37;
-    display: grid;
-    place-content: center;
   }
   .events__center {
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-rows: 1fr 1fr;
     min-height: 100vh;
-    display: grid;
-    place-content: center;
-    align-items: center;
-    display: flex;
   }
   .events__center-center {
     text-align: center;
-    color: var(--whiteColor);
+    color: white;
     border: 3px solid yellow;
     width: 100%;
     margin: 0;
+    grid-column: 1/-1;
   }
   .events__center-center h1 {
     font-size: 2.5rem;
@@ -692,9 +684,13 @@ header nav .list-items a {
   .events__center-center a {
     white-space: nowrap;
   }
-  .events__center-left, .events__center-right {
-    display: none;
-    border: 3px solid green;
+  .events__center-left {
+    grid-row: 2/3;
+  }
+  .events__center-right {
+    align-self: flex-end;
+    grid-column: 3/4;
+    grid-row: 2/3;
   }
   .events__wave-container {
     display: none;

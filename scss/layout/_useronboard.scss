@@ -40,6 +40,10 @@
 
         }
 
+        &-bottom{
+            display: none;
+        }
+
         
     }
 
@@ -84,14 +88,14 @@
             background-color: var(--primaryColor);
             display: block;
             border: 3px solid yellow;
+            
     
             &-center{
                 text-align: center;
                 color: var(--whiteColor);
                 border: 3px solid red;
-                width: 70%;
-                margin-right: auto;
-                margin-left: auto;
+                width: 100%;
+                margin: 103px auto;
                 h1{
                     font-size: 2.5rem;
                     margin-bottom: 0.8em;
@@ -106,54 +110,27 @@
             }
 
             &-left , &-right{
-               border: 3px solid blue;
+               display: none;
+            }
+
+            &-bottom{
+                display: block;
+                width: 100%;
+                margin: 0;
+
+                @media only screen and(min-width: 520px){
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
                 
-            
-
-
-            }
-
-            &-left{
-                position: relative;
-                right: 80px;
-                bottom: -1200px;
-            }
-
-            &-right{
-                position: relative;
-                right: -180px;
-                bottom: -330px;
             }
     
             
         }
     
         &__bottom{
-            text-align: center;
-            position: relative;
-    
-    
-            &-mockup{
-                display: flex;
-                width: 40%;
-                position: absolute;
-                top: -170px;
-                left: 30%;
-                @media only screen and (max-width: 1685px){
-                    left: 25%;
-                }
-                .mockup-bottom-right{
-                    position: absolute;
-                    top: 60px;
-                    right: 0;
-                    @media only screen and (max-width: 1685px){
-                        right: -120px;
-                    }
-                }
-             
-                
-    
-            }
+            display: none;
 
             .wave-container{
                 display: none;

@@ -46,6 +46,10 @@
             }
         }
 
+        &-img-mobile{
+            display: none;
+        }
+
 
     }
 }
@@ -98,7 +102,10 @@
                 }
             }
     
-    
+            &-img-mobile{
+                display: block;
+            }
+
         }
     }
 }
