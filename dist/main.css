@@ -1096,6 +1096,10 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
 }
