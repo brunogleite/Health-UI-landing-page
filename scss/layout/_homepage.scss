@@ -11,18 +11,19 @@
 
 .homepage{
     background-color: var(--primaryColor);
-    min-height: 100%;
+    min-height: 100vh;
     color: var(--whiteColor);
-    padding-top: 3.35em;
+   // padding-top: 240px;
     &__row{
        
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 100vh;
+        //height: 100vh;
         .homepage__col{
-            max-width: 50%;
-
+            width: 50%;
+            border: 3px solid red;
+            //min-height: 100vh;
             &-img{
                 display: none;
             }
@@ -122,28 +123,26 @@
     
     .homepage{
         background-color: var(--primaryColor);
-        height: 100vh;
+        //height: 100vh;
         color: var(--whiteColor);
-        padding-top: 0em;
+        padding-top: 8em;
         border: 3px solid green;
 
         &__row{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 100vh;
-            //border: 3px solid yellow;
+            display: block;
+            //height: 100vh;
+            
             
             .homepage__col{
                 
-                //border: 3px solid red;
-                max-width: 100%;
-                width: 100%;
+                
+                min-width: 100%;
+                //width: 100%;
                
 
                 &-img{
                     display: block;
-                    padding-top: 500px;
+                    
                 }
 
                 &-intro{
@@ -155,8 +154,8 @@
                     p{
                         font-weight: 500;
                         line-height: 28px;
-                        margin-bottom: 1.4375em;
-                        margin-top: 0.5625em;
+                        padding-bottom: 1.4375em;
+                        padding-top: 0.5625em;
                     
                     }
     
@@ -198,6 +197,7 @@
             .homepage__col-two{
                 display: none;
                 width: 0;
+            
             }
 
             
