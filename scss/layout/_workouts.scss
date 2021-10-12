@@ -103,7 +103,7 @@
             &-center{
                 text-align: center;
                 color: var(--whiteColor);
-                margin: 0;
+                margin: -200px 0 0 0;
                
     
                 h1{
@@ -135,7 +135,7 @@
 
                 &-top, &-bottom{
                     position: relative;
-                    top: -100px;
+                    top: -300px;
                 }
 
                 &-bottom{

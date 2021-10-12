@@ -71,7 +71,7 @@
                 text-align: center;
                 color: var(--whiteColor);
                 width: 100%;
-                padding: 100px 0 0 0;
+                margin: -250px 0 0 0;
                 margin: 0 auto;
                 h1{
                     font-size: 2.5rem;
@@ -100,7 +100,7 @@
             &-top-mobile, &-bottom-mobile{
                 display: block;
                 position: relative;
-                top: -60px;
+                top: -150px;
             }
 
 

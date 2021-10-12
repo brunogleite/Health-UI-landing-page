@@ -596,7 +596,7 @@ header nav .nav-links li:hover {
     text-align: center;
     color: var(--whiteColor);
     width: 100%;
-    padding: 100px 0 0 0;
+    margin: -250px 0 0 0;
     margin: 0 auto;
   }
   .health__center-center h1 {
@@ -619,7 +619,7 @@ header nav .nav-links li:hover {
   .health__bottom-top-mobile, .health__bottom-bottom-mobile {
     display: block;
     position: relative;
-    top: -60px;
+    top: -150px;
   }
   .health__bottom .mockup-desktop {
     display: none;
@@ -706,7 +706,7 @@ header nav .nav-links li:hover {
   .workouts__center-center {
     text-align: center;
     color: var(--whiteColor);
-    margin: 0;
+    margin: -200px 0 0 0;
   }
   .workouts__center-center h1 {
     font-size: 2.5rem;
@@ -729,7 +729,7 @@ header nav .nav-links li:hover {
   }
   .workouts__bottom-mobile-top, .workouts__bottom-mobile-bottom {
     position: relative;
-    top: -100px;
+    top: -300px;
   }
   .workouts__bottom-mobile-bottom {
     width: 130%;
