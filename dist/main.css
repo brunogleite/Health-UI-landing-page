@@ -1124,6 +1124,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
 *, *::before, *::after {
