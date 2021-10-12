@@ -139,8 +139,9 @@ header nav .nav-links li:hover {
     color: var(--whiteColor);
     font-weight: 700;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 30;
+    overflow-x: hidden;
     /*animation*/
   }
   header nav {
