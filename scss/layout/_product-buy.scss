@@ -4,15 +4,16 @@
     display: grid;
     place-content: center;
     min-height: 100vh;
+    
 
     &-logo{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: -300px;
+        margin-top: -180px;
 
         h1{
-            font-size: 4.5rem;
+            font-size: 2.375rem;
             font-weight: 700;
             margin-top: -0.74em;
         }
@@ -28,6 +29,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
+        
     }
 }
 
@@ -44,6 +46,7 @@
         &-mockup{
             position: relative;
             margin-top: -550px;
+            transform: scale(1.3);
             @media only screen and (max-width: 1400px){
                 margin-top: -250px;
             }
@@ -83,7 +86,8 @@
 
         p{
             color: #8883F0;
-            font-size: 1.4rem; 
+            font-size: 1.4rem;
+            margin: 70px 0; 
         }
     }
 

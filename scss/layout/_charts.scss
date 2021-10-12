@@ -46,6 +46,10 @@
 
     .charts{
 
+        &__container{
+            margin: 8rem 0;
+        }
+
         &__container-mockup{
 
             .mockup-desktop{

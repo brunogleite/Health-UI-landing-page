@@ -88,6 +88,7 @@
     .workouts{
         min-height: 100vh;
         position: relative;
+        overflow-x: hidden;
     
         .wave-container-top{
             display: none;
@@ -131,6 +132,16 @@
             &-mobile{
                 display: block;
                 background-color: var(--primaryColor);
+
+                &-top, &-bottom{
+                    position: relative;
+                    top: -100px;
+                }
+
+                &-bottom{
+                    width: 130%;
+                    transform: translateX(-50px);
+                }
             }
     
             &-mockup{
