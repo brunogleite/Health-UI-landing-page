@@ -252,6 +252,7 @@ header nav .nav-links li:hover {
   line-height: 28px;
   margin-bottom: 3.5em;
   margin-top: 2.2em;
+  width: 60%;
 }
 .homepage__row .homepage__col-cta a {
   user-select: none;
@@ -322,6 +323,7 @@ header nav .nav-links li:hover {
     padding-bottom: 0.4375em;
     padding-top: 0.5625em;
     width: 100%;
+    border: 3px solid red;
   }
   .homepage__row .homepage__col-cta {
     white-space: nowrap;
