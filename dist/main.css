@@ -1107,7 +1107,7 @@ header nav .nav-links li:hover {
 @media only screen and (max-width: 768px) {
   .product__buy-logo h1 {
     font-size: 2.375rem;
-    margin-top: -180px;
+    margin-top: -60px;
   }
   .product__buy-mockup img {
     transform: scale(1.3);
