@@ -729,7 +729,7 @@ header nav .nav-links li:hover {
   }
   .workouts__bottom-mobile-top, .workouts__bottom-mobile-bottom {
     position: relative;
-    top: -300px;
+    top: -250px;
   }
   .workouts__bottom-mobile-bottom {
     width: 130%;
