@@ -55,6 +55,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 30;
+  overflow-x: hidden;
 }
 header nav {
   display: flex;
@@ -980,7 +981,7 @@ header nav .nav-links li:hover {
   background-size: cover;
   margin-top: 70px;
   margin-bottom: 70px;
-  margin-left: auto;
+  margin-right: 60px;
   border-radius: 8px;
 }
 .features__sleep h1 {
@@ -994,7 +995,6 @@ header nav .nav-links li:hover {
   background-position: 50% 50%;
   margin-top: 70px;
   margin-bottom: 70px;
-  margin-right: auto;
   border-radius: 8px;
 }
 .features__workout h1 {
@@ -1037,10 +1037,10 @@ header nav .nav-links li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -180px;
+  margin-top: -300px;
 }
 .product__buy-logo h1 {
-  font-size: 2.375rem;
+  font-size: 4.5rem;
   font-weight: 700;
   margin-top: -0.74em;
 }
@@ -1065,7 +1065,6 @@ header nav .nav-links li:hover {
 .product__buy-mockup {
   position: relative;
   margin-top: -550px;
-  transform: scale(1.3);
 }
 @media only screen and (max-width: 1400px) {
   .product__buy-mockup {
@@ -1111,6 +1110,21 @@ header nav .nav-links li:hover {
   to {
     left: 0%;
     opacity: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .product__buy-logo h1 {
+    font-size: 2.375rem;
+    margin-top: -180px;
+  }
+  .product__buy-mockup img {
+    transform: scale(1.3);
+  }
+  .product-content a {
+    font-size: 61px;
+  }
+  .product-content p {
+    margin: 70px 0;
   }
 }
 html {
