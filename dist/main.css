@@ -139,7 +139,7 @@ header nav .nav-links li:hover {
     color: var(--whiteColor);
     font-weight: 700;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 30;
     /*animation*/
   }
