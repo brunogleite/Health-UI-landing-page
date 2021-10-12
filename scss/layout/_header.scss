@@ -8,7 +8,7 @@
         position: fixed;
         width: 100%;
         z-index: 30;
-        overflow-x: hidden;
+    
         nav{
             display: flex;
             align-items: center;
@@ -126,13 +126,14 @@
             position: fixed;
             width: 100%;
             z-index: 30;
+           
 
             nav{
                 display: flex;
                 align-items: center;
                 padding-top: 1.3125em;
                 padding-bottom: 1em;
-                
+                border: 3px solid red;
     
                 a{
                     color: white;

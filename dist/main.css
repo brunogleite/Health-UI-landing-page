@@ -55,7 +55,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 30;
-  overflow-x: hidden;
 }
 header nav {
   display: flex;
@@ -149,6 +148,7 @@ header nav .nav-links li:hover {
     align-items: center;
     padding-top: 1.3125em;
     padding-bottom: 1em;
+    border: 3px solid red;
   }
   header nav a {
     color: white;
